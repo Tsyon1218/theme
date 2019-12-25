@@ -4,32 +4,38 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mypersonalinfo
+ * @package myPersonalinfo
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+<!--Change the Following area If needed -->
+<section class="search_area_df">
+<div class="container">		 
+		<div class="row clearfix">
+			
+			
+			
+			<div class="col-md-7 col-sm-12 col-xs-12">
+				<div class="search_tx_box">
+					<h4 class="sr_title">
+						
+						<?php esc_html_e( 'Search not Found', 'myPersonalinfo' ); ?>
+					</h4>
+					<div class="search_text">	
+						<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'myPersonalinfo' ); ?>
+                    
+					</div>
+					
+					<div class="search_page_btn">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="theme-btn btn-style-three"><?php esc_html_e( 'Back to Home', 'myPersonalinfo' ); ?><span class="icon flaticon-next-4"></span></a>
+					</div>
+				
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			mypersonalinfo_posted_on();
-			mypersonalinfo_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+					
+				</div>
+			</div>
+	</div>
+</div>
+</section>
 
-	<?php mypersonalinfo_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php mypersonalinfo_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

@@ -4,56 +4,31 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mypersonalinfo
+ * @package myPersonalinfo
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				mypersonalinfo_posted_on();
-				mypersonalinfo_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php mypersonalinfo_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mypersonalinfo' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mypersonalinfo' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php mypersonalinfo_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<article>
+ <div class="single-blog-post">
+  <div class="blog_post">
+	<div class="img-box">		
+		<?php myPersonalinfo_post_thumbnail(); ?>				
+		 <?php myPersonalinfo_meta_info(); ?>
+      	
+	</div><!-- /.img-box -->
+	<div class="text-box">
+	<div class="text">
+		 
+		<h3><a href="<?php echo esc_url(get_permalink(get_the_id()));?>"><?php the_title();?></a></h3>
+		<!-- the_excerp/text -->
+		 <div class="entry-content">
+		   <?php the_excerpt();?>
+        </div><!-- .entry-content -->
+	
+	
+	<a href="<?php echo esc_url(get_permalink(get_the_id()));?>" class="theme-btn btn-style-thirteen"><div class="btn-title"><?php esc_html_e('Read More', 'myPersonalinfo');?><span class="icon flaticon-next"></span></div></a>	
+	
+	</div></div>	
+	</div>
+</div><!-- /.single-blog-post -->
+</article>

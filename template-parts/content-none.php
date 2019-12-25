@@ -4,16 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mypersonalinfo
+ * @package myPersonalinfo
  */
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'mypersonalinfo' ); ?></h1>
-	</header><!-- .page-header -->
 
+
+<section class="no-results not-found">
 	<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
@@ -21,7 +19,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'mypersonalinfo' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'myPersonalinfo' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -34,14 +32,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mypersonalinfo' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'myPersonalinfo' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mypersonalinfo' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'myPersonalinfo' ); ?></p>
 			<?php
 			get_search_form();
 
