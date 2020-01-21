@@ -11,7 +11,7 @@ License URI: LICENSE
 A starter theme called  myPersonalinfo.
 
 == Description ==
-myPersonalinfo is optimized multi-purpose WordPress Portfolio theme. myPersonalinfo is a portfolio Theme for personal, digital marketers, agencies, graphic designers, video producers, web designers, web developers,professional bloggers and other freelance artistic or creative workers. myPersonalinfo compatible with Gutenberg, Elementor
+myPersonalinfo is optimized multi-purpose WordPress Portfolio theme. myPersonalinfo is a portfolio Theme for personal, digital marketers, agencies, graphic designers, video producers, web designers, web developers,professional bloggers and other freelance artistic or creative workers. myPersonalinfo compatible with Elementor
 
 == Installation ==	
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
