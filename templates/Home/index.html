@@ -1,0 +1,213 @@
+{% extends 'Base/base.html' %}
+{% block content %}
+<!-- Page Header -->
+
+<header class="masthead" style="background-image: url('media/s1h.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="site-heading">
+          <h1>Programming Course</h1>
+          <p>Programmers are in high demand in today’s growing Software Development field, almost every company is becoming more reliant on technology to function. Programs allow professionals in every industry like healthcare, business, sales, construction, graphic design, teaching, and more... </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+    <!-- Main Content -->
+    
+    <section class="multi-search-section">
+      <div class="msf-warp">
+        <div class="container">
+          <h5>Search your Course</h5>
+          <form class="multi-search-form">
+            <input type="text" placeholder="Course">
+            <input type="text" placeholder="Level">
+            <button class="site-btn bg-primary">Search <i class="fa fa-angle-right"></i></button>
+          </form>
+        </div>
+      </div><br><br>
+    </section>
+
+    <section class="services-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-9 service-item">
+            <div>
+              <h5 class="si-content si-icon flaticon-apple  ">Training Center</h5>
+              <p>Adis Ababa Institute of technology is enrolling students in CCNA, WEB, ORACLE and other Courses at night and summer program. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="si-content si-icon ">
+              <h5 class="flaticon-mortarboard">Training Center</h5>
+              <p>Little Einsteins Early Learning Centre is now enrolling students for its brand new Bole campus in Addis Ababa.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="si-content si-icon">
+              <h5 class="flaticon-idea">Training Center</h5>
+              <p>Graspskills is conducting an instructor-led Live Online Python 101 certification training course in Addis Ababa, Ethiopia.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="si-content si-icon">
+              <h5 class="flaticon-medal">Training Center</h5>
+              <p>Gebeya training is a continuation education program and is great for current IT professionals who want to gain more experience and at the same time get their hands on cutting edge technologies that they are not be able to learn otherwise.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="si-content si-icon">
+              <h5 class="flaticon-question">Training Center</h5>
+              <p>AddisCoder students are current high schoolers who come from all across Ethiopia for 4 weeks to take the course in Addis Ababa.the program works with Meles Zenawi Foundation, attracting top students from all of Ethiopia with help from the Ministry of Education.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="si-content si-icon">
+              <h5 class="flaticon-learning">Training Center</h5>
+              <p>2KO Ethiopia presents web and programming courses in Addis Ababa. Enrol today for our instructor-led training courses.A range of programming courses for groups is available at your centre in Addis Ababa, Dire Dawa, Mek'ele and Nazrēt. Contact us if you have a group.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header class="masthead" style="background-image: url('media/3.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="site-heading">
+              <span>our students</span>
+              <h2>Testimonials</h2>
+              <div class="quota">“</div>
+              <h5>It helped me so much</h5>
+              <p>Ethio-Academy helps me to know my country programming Academys,Online courses and also new program that are available in this time.</p>
+              <h6><span>Tsyon Kefyalew,</span> Student</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+     <section class="courses-section spad">
+      <div class="container">
+        <div class="sec-title text-center">
+          <span>Only  the best</span>
+          <h2>Our Courses</h2><br><br>
+        </div>
+        <section class="fact-section spad">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>HTML5</h5>
+                <p>A larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p><br><br>
+                <span><i class="flaticon-student-2"></i>Per-credit*200Br.</span><br>
+                <span><i class="flaticon-placeholder"></i>3</span><br>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterStudent:RegisterStudent' %}">Register Now</a><i class="fa fa-angle-right"></i></button>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>Python</h5>
+                <p>It has efficient high-level data structures and a simple but effective approach to object-oriented programming.</p><br><br>
+                <span><i class="flaticon-student-2"></i>Per-credit*100Br.</span><br>
+                <span><i class="flaticon-placeholder"></i>4</span><br>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterStudent:RegisterStudent' %}">Register Now</a><i class="fa fa-angle-right"></i></button>
+              
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>Django</h5>
+                <p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.It’s free and open source. </p>
+                <span><i class="flaticon-student-2"></i>Per-credit*100Br.</span><br>
+                <span><i class="flaticon-placeholder"></i>4</span><br><br>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterStudent:RegisterStudent' %}">Register Now</a><i class="fa fa-angle-right"></i></button>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>Laravel</h5>
+                <p>Laravel is PHP web framework,it follow's the MVC architectural pattern and based on Symfony.</p><br>
+                <span><i class="flaticon-student-2"></i>Per-credit*100Br.</span><br>
+                <span><i class="flaticon-placeholder"></i>4</span><br><br>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterStudent:RegisterStudent' %}">Register Now</a><i class="fa fa-angle-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </section><br><br>
+        <section class="fact-section spad">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 fact-item ">
+                <img src="../../media/1.png"width=100>
+                <h2 class= "si-content">250</h2>
+                <p>New Students</p>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <img src="../../media/2.png"width=100>
+                <h2 class= "si-content ">4000</h2>
+                <p>Grad Students</p>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <img src="../../media/3.png"width=100>
+                <h2 class= "si-content">50</h2>
+                <p>Qualified Teachers</p>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <img src="../../media/4.png"width=70>
+                <h2 class= "si-content">100</h2>
+                <p>Amazing Courses</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
+    <header class="masthead" style="background-image: url('media/newslatter-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="site-heading">
+              <span>Newsletter</span>
+              <h4>Stay updated</h4>
+            </div>
+          </div>
+            <div class="col-lg-9 nl-form-warp">
+                <input type="text" placeholder="Your E-mail">
+                <button class="site-btn">Subscribe <i class="fa fa-angle-right"></i></button><br><br><br>
+              
+            </div>
+            
+        </div>
+      </div>
+    </header>
+    <section class="courses-section spad">
+      <div class="container">
+        <div class="sec-title text-center">
+          <h2>Job Vaccancy</h2><br><br>
+        </div>
+        <section class="fact-section spad">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5> Graphics designer</h5>
+                <p>Company:Destan communication<br>Description: We are looking for 2 creative passionate graphics designers.(Register-Feb20)<br></p>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterVaccancy:RegisterVaccancy' %}">Apply</a><i class="fa fa-angle-right"></i></button>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5> Digital marketer</h5>
+                <p>Company:Elyal consult<br>Description: We are looking for 2 creative passionate graphics designers.(Register-Feb20)<br><br></p>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterVaccancy:RegisterVaccancy' %}">Apply</a><i class="fa fa-angle-right"></i></button>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>IT_EXECUTIVE</h5>
+                <p>Company:School of canenus<br>Description:Taking care of school  website, maintaining our  social media pages.
+                  And other IT support(Register-Feb.8)<br></p>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterVaccancy:RegisterVaccancy' %}">Apply</a><i class="fa fa-angle-right"></i></button>
+              </div>
+              <div class="col-lg-3 col-sm-6 fact-item">
+                <h5>Software Developer</h5>
+                <p>Company:Personal<br>Description:I need Website and Android app developer.(Register-Feb5)<br><br><br><br></p>
+                <button class="site-btn bg-primary "><a fa fa-angle-right href="{% url 'RegisterVaccancy:RegisterVaccancy' %}">Apply</a><i class="fa fa-angle-right"></i></button>
+              </div>
+        </section><br><br>
+      </section>
+{% endblock %}
